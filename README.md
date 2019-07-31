@@ -33,7 +33,7 @@ $ roslaunch diff_mobile_robot diff_mobile_robot.launch
 $ roslaunch diff_mobile_robot diff_mobile_gazebo.launch
 ３つ目のターミナル
 $ rosrun diff_mobile_robot key_teleop.py 
-4つ目のターミナル
+４つ目のターミナル
 $ rviz
 
 ```
