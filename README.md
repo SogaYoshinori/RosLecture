@@ -51,13 +51,13 @@ $ rviz rviz
 
 ナビゲーション実行まで，以下の流れで行う．
 1. シミュレーションをするためにGAZEBOを実行する．
-2. ナビゲーションを実行する．
+1. ナビゲーションを実行する．
 1. 移動場所を指定するためのrvizを実行する．
-1. Rvizでの，４輪ロボットと地図データとナビゲーション経路を設定する．
+1. RVizでの，４輪ロボットと地図データとナビゲーション経路を設定する．
 1. 好きな箇所に矢印を配置し，４輪ロボットのナビゲーションを開始する．
 
 
-## ターミナルで1〜3の実行
+## ①ターミナルで1〜3の実行
 　1〜3を実行するためのコマンドは以下の通りである．それぞれ別々のターミナルにコマンドを打ち実行する(ターミナル数：3)．
 
 1. $ roslaunch wheel_robot wheel_robot.launch
@@ -65,26 +65,43 @@ $ rviz rviz
 1. $ rviz rviz
 
 
-## Rvizの設定(4)
-　4輪ロボットと地図データの読み込み，経路の表示の設定は以下の画像に示す．
+## ②RVizの設定(4)
+　4輪ロボットと地図データの読み込みと，ナビゲーション経路の表示の設定を紹介する．
 ### 4輪ロボットの読み込み
+1. RVizのウインドウの左下側にある**Add**をクリックする．
+1. クリックにより表示されたウインドウの**By display tipe**の中にある**RobotModel**をクリックする．
+1. RVizのウインドウに，黄色のシャーシに黒色のタイヤと青色のレーザレンジファインダを搭載した4輪ロボットが表示される．
+
+4輪ロボットの読み込み操作の様子．
 
 ![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/robot.gif?raw=true)
 
 ### 地図データの読み込み
+1. RVizのウインドウの左下側にある**Add**をクリックする．
+1. クリックにより表示されたウインドウの**By topic**の中にある**Map**をクリックする．
+1. 地図生成によって得てある地図データが，4輪ロボットの下に表示させれる．
 
 ![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/map.gif?raw=true)
 
+地図データの読み込み操作の様子．
+
 ### 経路の表示
+1. RVizのウインドウの左下側にある**Add**をクリックする．
+1. クリックにより表示されたウインドウの**By topic**の中にある**「/Plan」の左横の三角マーク**をクリックする．
+1. /Planの下に現れた**Path**をクリックする．
+1. RVizのウインドウに表示された4輪ロボットに変化は見られないが，ナビゲーション開始時に経路が表示される．
 
 ![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/path.gif?raw=true)
 
+経路を表示するために設定操作の様子．
 
-## ナビゲーション開始(5)
-　ナビゲーションは，Rvizの読み込まれた地図データ上に， **「2D Nav Goal」** という名の矢印を配置することで開始する．
+## ③ナビゲーションの開始(5)
+RVizのウインドウの上右側にある**2D Nav Goal**をクリックし，表示されている地図データに目的地としたい箇所をクリックする．
+
+ナビゲーションの目的地を，設定している様子．
 
 ![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/goal.gif?raw=true)
 
-矢印を配置してナビゲーションを開始した様子．
+RVizとGAZEBOにおいて，目的地指定後のナビゲーション動作の様子．
 
 ![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/rviz-gazebo.gif?raw=true)
