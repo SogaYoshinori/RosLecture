@@ -69,12 +69,20 @@ $ rviz rviz
 　4輪ロボットと地図データの読み込み，経路の表示の設定は以下の画像に示す．
 ### 4輪ロボットの読み込み
 
+![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/robot.gif?raw=true)
+
 ### 地図データの読み込み
 
+![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/map.gif?raw=true)
+
 ### 経路の表示
+
+![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/path.gif?raw=true)
 
 
 ## ナビゲーション開始(5)
 　ナビゲーションは，Rvizの読み込まれた地図データ上に， **「2D Nav Goal」** という名の矢印を配置することで開始する．
 
 矢印を配置してナビゲーションを開始した様子．
+
+![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/rviz-gazebo.gif?raw=true)
