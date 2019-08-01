@@ -83,6 +83,8 @@ $ rviz rviz
 ## ナビゲーション開始(5)
 　ナビゲーションは，Rvizの読み込まれた地図データ上に， **「2D Nav Goal」** という名の矢印を配置することで開始する．
 
+![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/goal.gif?raw=true)
+
 矢印を配置してナビゲーションを開始した様子．
 
 ![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/rviz-gazebo.gif?raw=true)
