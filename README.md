@@ -62,6 +62,17 @@ $ rviz rviz
 1. $ roslaunch wheel_robot amcl.launch
 1. $ rviz rviz
 
+1.roslaunch wheel_robot wheel_robot.launch実行の様子．
+
+![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/wheel_robot_launch.gif?raw=true)
+
+2.roslaunch wheel_robot amcl.launch実行の様子．
+
+![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/amcl_launch.gif?raw=true)
+
+3.viz rviz実行の様子．
+
+![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/rviz_rviz.gif?raw=true)
 
 ## ②RVizの設定(4)
 4輪ロボットと地図データの読み込みと，ナビゲーション経路の表示の設定を紹介する．
@@ -87,7 +98,7 @@ $ rviz rviz
 それぞれのデータの表示方法は，以下の通りである．
 1. RVizのウインドウの左側，Displays内にある **Mapの左横の三角マーク** をクリックする．
 1. Mapの下側に現れた一覧より，**Topicの/map** をクリックする．
-1. クリック後，**/mapの右横に現れた三角マーク** をクリックし/mapの下側に現れた，**/move_base/global_costmap/costmap**または，**/move_base/local_costmap/costmap**をクリックする．
+1. クリックにより，**/mapの右横に現れた三角マーク** をクリックし，/mapの下側に現れた **/move_base/global_costmap/costmap** または， **/move_base/local_costmap/costmap** をクリックする．
 
 global_costmapの表示操作の様子．
 
@@ -100,7 +111,7 @@ local_costmapの表示操作の様子．
 ### 経路の表示
 1. RVizのウインドウの左下側にある **Add** をクリックする．
 1. クリックにより表示されたウインドウの **By topic** の中にある **/Planの左横の三角マーク** をクリックする．
-1. /Planの下に現れた**Path**をクリックする．
+1. /Planの下に現れた **Path** をクリックする．
 1. RVizのウインドウに表示された4輪ロボットに変化は見られないが，ナビゲーション開始時に経路が表示される．
 
 経路を表示するために設定操作の様子．
@@ -109,7 +120,7 @@ local_costmapの表示操作の様子．
 
 
 ## ③ナビゲーションの開始(5)
-RVizのウインドウの上右側にある **2D Nav Goal** をクリックする．カーソルの下に緑の矢印が表示されるので，その状態のカーソルで目的地としたい箇所をクリックする．目的地を指定すると，4輪ロボットから目的地までの経路(緑色の線)が表示されて，ナビゲーションを開始する．
+RVizのウインドウの上右側にある **2D Nav Goal** をクリックする．カーソルの下に緑の矢印が表示されるので，その状態のカーソルで目的地としたい箇所をクリックする．目的地を指定すると，4輪ロボットから目的地までの経路(緑色の線)が表示されて，ナビゲーションが自動的に開始される．
 ナビゲーションの様子は，RVizとGAZEBOの両方で確認することができる．
 
 目的地の指定をしている様子．
