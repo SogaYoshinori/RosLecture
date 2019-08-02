@@ -62,8 +62,9 @@ $ rviz rviz
 1. $ roslaunch wheel_robot amcl.launch
 1. $ rviz rviz
 
-1.roslaunch wheel_robot wheel_robot.launch実行の様子．
-GAZEBOが起動すると，willowgarageという建物のモデル内に，4輪ロボットのモデルが置かれた状態が表示される．4輪ロボットは，黄色のシャーシ，黒色のタイヤ，青色のレーザレンジファインダで構成される．
+1.roslaunch wheel_robot wheel_robot.launch実行の様子．  
+GAZEBOが起動すると，willowgarageという建物のモデル内に，4輪ロボットのモデルが置かれた状態が表示される．  
+4輪ロボットは，黄色のシャーシ，黒色のタイヤ，青色のレーザレンジファインダで構成される．
 
 ![result](https://github.com/SogaYoshinori/RosLecture/blob/master/gif/wheel_robot_launch.gif?raw=true)
 
